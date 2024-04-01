@@ -8,7 +8,7 @@ contract EthPool {
 
     struct Deposit {
         uint256 amount;
-        uint256 rewardEligibilityCounter; // to track eligibility of rewards
+        uint256 rewardEligibilityCounter; // track eligibility of rewards
     }
 
     using SafeMath for uint256;
@@ -98,7 +98,7 @@ contract EthPool {
             }
         }
 
-    // The total amount includes both the initial deposit amounts and their earned rewards
+    // Reflects initial deposit amounts and their earned rewards
     return totalAmount;
 }
 
