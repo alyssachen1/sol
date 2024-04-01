@@ -57,6 +57,7 @@ contract EthPool {
         emit DepositMade(msg.sender, msg.value);
     }
 
+
     function withdraw() external {
         uint256 totalAmount = 0;
         
